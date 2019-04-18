@@ -1,0 +1,21 @@
+version: '2'
+services:
+    ingalom-app:
+        image: ingalom
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATA_MONGODB_URI=mongodb://ingalom-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=ingalom
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_JEST_URI=http://ingalom-elasticsearch:9200
+        ports:
+            - 8080:8080
+    ingalom-mongodb:
+        extends:
+            file: mongodb.yml
+            service: ingalom-mongodb
+    ingalom-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: ingalom-elasticsearch

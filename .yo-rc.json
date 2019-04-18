@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "ingalom",
+    "packageName": "com.ingalom",
+    "packageFolder": "com/ingalom",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "gradle",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.2",
+    "jwtSecretKey": "Y2JkMWI0Zjg2ZTczNDM0NTdhYWVkY2RmYzA0ZGY0MjllNTliZmJhYTM2ZmM3OGYzNDQzOThkYmIwMTMzOWI1MjIzNDkxM2ZjYTkyZDZlYjhmZDQyZDcwZTExMzRjN2YzM2FiNGRmZjRlN2U0NzA2OTdjYjVmY2ZmYmI5NWU2ZTc=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "deejoe79",
+  "repository-name": "playground"
+}
